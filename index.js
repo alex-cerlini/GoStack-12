@@ -8,7 +8,7 @@ const server = express()
 
 
 //localhost:3000
-server.get('/teste', (req, res) => {
+server.get('/users', (req, res) => {
 const name = req.query.name
 
 return res.json({message: `Hello ${name}`})
