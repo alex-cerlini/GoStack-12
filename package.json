@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:alex-cerlini/GoStack-12.git",
   "author": "<alexcerlinii@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
