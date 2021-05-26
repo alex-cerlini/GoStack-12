@@ -8,10 +8,10 @@ const server = express()
 
 
 //localhost:3000
-server.get('/users', (req, res) => {
-const name = req.query.name
+server.get('/users/:id', (req, res) => {
+const { id } = req.params
 
-return res.json({message: `Hello ${name}`})
+return res.json({message: `Buscando o usuário de id ${id}`})
 })
 
 //localhost:3000
