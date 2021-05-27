@@ -6,10 +6,14 @@ const server = express()
 // Route params = /users/1
 // Request body = { "name": "alexander", "email": "alexcerlinii@gmail.com"}
 
+// CRUD = Create, Read, Update, Delete
+
 const users = ['Alexander', 'Beatriz', 'Carla']
 
+server.get('/users', (req, res) => {
+  return res.json(users )
+})
 
-//localhost:3000
 server.get('/users/:index', (req, res) => {
 const { index } = req.params
 
